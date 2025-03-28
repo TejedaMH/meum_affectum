@@ -1,0 +1,144 @@
+<!--______________________________ESTRÉS______________________________-->
+
+<!--_________________INICIA HTML_________________-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meum affectum</title>
+
+<!--_________________INICIA CSS_________________-->
+
+    <style>
+
+        /*ANIMACIÓN DEL TEXTO (VIBRACIÓN)*/
+        @keyframes vibrar {
+            0% { 
+                transform: translate(0, 0); 
+            }
+            25% { 
+                transform: translate(2px, -2px); 
+            }
+            50% { 
+                transform: translate(-2px, 2px); 
+            }
+            75% { 
+                transform: translate(2px, 2px); 
+            }
+            100% { 
+                transform: translate(0, 0); 
+            }
+        }
+
+        /*ANIMACIÓN DEL TEXTO (GLITCH)*/
+        @keyframes glitch {
+            0% { 
+                filter: blur(0px) hue-rotate(0deg); 
+            }
+            50% { 
+                filter: blur(3px) hue-rotate(20deg); 
+            }
+            100% { 
+                filter: blur(0px) hue-rotate(0deg); 
+            }
+        }
+
+        /*ESTILO DEL CURPO HTML*/
+        body {
+            background-color: black;
+        }
+
+        /*ESTILO DEL CONTENEDOR ESTRES (TODAS LAS LETRAS)*/
+        .estres {
+            text-align: center;
+            padding-top: 3%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 2%;
+        }
+
+        .estres span {
+            display: inline-block;
+            animation: vibrar 0.1s infinite alternate;
+        }
+
+        /*Estilo para letra E*/
+        #estres-uno { 
+            color: red; 
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif; 
+            font-size: 400%; 
+        
+        }
+
+        /*Estilo para letra S*/
+        #estres-dos { 
+            color: rgb(255, 110, 110); 
+            font-family: Impact, sans-serif; 
+            font-size: 450%; 
+        }
+
+        /*Estilo para letra T*/
+        #estres-tres { 
+            color: rgb(121, 17, 17); 
+            font-family: 'Times New Roman', serif; 
+            font-size: 410%; 
+        }
+
+        /*Estilo para letra R*/
+        #estres-cuatro { 
+            color: rgb(161, 78, 78); 
+            font-family: 'Lucida Sans', sans-serif; 
+            font-size: 450%; 
+        }
+
+        /*Estilo para letra E*/
+        #estres-cinco { 
+            color: firebrick; 
+            font-family: cursive; 
+            font-size: 470%; 
+        }
+
+        /*Estilo para letra s*/
+        #estres-seis { 
+            color: rgb(100, 27, 27); 
+            font-family: Impact, sans-serif; 
+            font-size: 420%; 
+        }
+
+        /* Efecto de glitch aleatorio en algunas letras */
+        #estres-uno, #estres-tres, #estres-cinco {
+            animation: vibrar 0.1s infinite alternate, glitch 0.2s infinite alternate;
+        }
+
+    </style>
+
+<!--_________________TERMINA CSS_________________-->
+
+
+<!--_________________CONTINUA HTML_________________-->
+</head>
+
+<body>
+
+    <!--PALABRA ESTRES (CADA LETRA ESTA CON UN ID DIFERENTE Y TODAS ESTÁN EN UN CONTENEDOR)-->
+    <div class="estres">
+        <span id="estres-uno">E</span>
+        <span id="estres-dos">S</span>
+        <span id="estres-tres">T</span>
+        <span id="estres-cuatro">R</span>
+        <span id="estres-cinco">É</span>
+        <span id="estres-seis">S</span>
+    </div>    
+    
+    <div class="historias">
+        <a href="indexh3.html">Encontrarme<br></a>
+        <a href="indexh4.html">El sentido de lo que hago<br></a>
+        <a href="indexh5.html">La molesta necesidad del humano<br></a>
+        <a href="indexh7.html">De mi para mi<br></a>
+    </div>
+</body>
+</html>
+<!--_________________TERMINA HTML_________________-->

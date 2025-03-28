@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meum affectum</title>
+
+    <style>
+
+        /* ANIMACIÓN DEL TEXTO (ENCOGER Y REGRESAR) */
+        @keyframes encogerse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        /* ANIMACIÓN DE DESAPARECER Y APARECER */
+        @keyframes desaparecer {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* ESTILO DEL Cuerpo HTML */
+        body {
+            background-color: black;
+        }
+
+        /* ESTILO DEL CONTENEDOR MIEDO (TODAS LAS LETRAS) */
+        .miedo {
+            text-align: center;
+            padding-top: 3%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 2%;
+            font-family: "Times New Roman", Times, serif;
+            color: rgb(182, 60, 245);
+        }
+
+        .miedo span {
+            display: inline-block;
+            animation: encogerse 1.5s ease-out infinite, desaparecer 4s ease-in-out infinite;
+        }
+
+        /* Estilo para letra M */
+        #miedo-uno { 
+            font-size: 500%; 
+        }
+
+        /* Estilo para letra I */
+        #miedo-dos {
+            font-size: 500%; 
+        }
+
+        /* Estilo para letra E */
+        #miedo-tres {  
+            font-size: 500%; 
+        }
+
+        /* Estilo para letra D */
+        #miedo-cuatro { 
+            font-size: 500%; 
+        }
+
+        /* Estilo para letra O */
+        #miedo-cinco { 
+            font-size: 500%; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- PALABRA MIEDO (CADA LETRA ESTÁ CON UN ID DIFERENTE Y TODAS ESTÁN EN UN CONTENEDOR) -->
+    <div class="miedo">
+        <span id="miedo-uno">M</span>
+        <span id="miedo-dos">I</span>
+        <span id="miedo-tres">E</span>
+        <span id="miedo-cuatro">D</span>
+        <span id="miedo-cinco">O</span>
+    </div>    
+
+    <div class="historias">
+        <a href="indexh5.html">La molesta necesidad del humano</a>
+    </div>
+</body>
+</html>

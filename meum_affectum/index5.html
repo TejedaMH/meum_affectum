@@ -1,0 +1,84 @@
+<!--______________________________ANSIEDAD______________________________-->
+
+<!--_________________INICIA HTML_________________-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meum affectum</title>
+
+<!--_________________INICIA CSS_________________-->
+
+    <style>
+        /* Estilo del cuerpo */
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Contenedor de la palabra ANSIEDAD */
+        .ansiedad {
+            display: flex;
+            gap: 5%;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 400%;
+            color: rgb(133, 106, 187);
+            font-weight: bold;
+            padding-top: 5%;
+        }
+
+        /* Animación de rebote caótico */
+        @keyframes rebotar {
+            0%, 100% { transform: translate(0, 0); }
+            20% { transform: translate(10px, -10px) rotate(5deg); }
+            40% { transform: translate(-15px, 10px) rotate(-6deg); }
+            60% { transform: translate(10px, 5px) rotate(3deg); }
+            80% { transform: translate(-8px, -10px) rotate(-4deg); }
+        }
+
+        /* Aplicar la animación a cada letra con diferente delay */
+        .ansiedad span {
+            display: inline-block;
+            animation: rebotar 0.9s infinite alternate ease-in-out;
+        }
+
+        .ansiedad span:nth-child(1) { animation-delay: 0s; }
+        .ansiedad span:nth-child(2) { animation-delay: 0.1s; }
+        .ansiedad span:nth-child(3) { animation-delay: 0.2s; }
+        .ansiedad span:nth-child(4) { animation-delay: 0.3s; }
+        .ansiedad span:nth-child(5) { animation-delay: 0.4s; }
+        .ansiedad span:nth-child(6) { animation-delay: 0.5s; }
+        .ansiedad span:nth-child(7) { animation-delay: 0.6s; }
+        .ansiedad span:nth-child(8) { animation-delay: 0.7s; }
+    </style>
+<!--_________________TERMINA CSS_________________-->
+
+
+<!--_________________CONTINUA HTML_________________-->
+</head>
+<body>
+
+    <div class="ansiedad">
+        <span>A</span>
+        <span>N</span>
+        <span>S</span>
+        <span>I</span>
+        <span>E</span>
+        <span>D</span>
+        <span>A</span>
+        <span>D</span>
+    </div>    
+    <div class="historias">
+        <a href="indexh1.html">Odiar o no<br></a>
+        <a href="indexh4.html">El sentido de lo que hago<br></a>
+        <a href="indexh7.html">De mi para mi<br></a>
+        <a href="indexh12.html">Tareas pendientes<br></a>
+    </div>
+</body>
+</html>
+
+<!--_________________TERMINA HTML_________________-->

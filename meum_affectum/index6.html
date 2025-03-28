@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meum affectum</title>
+
+    <style>
+
+        /* ANIMACIÓN DE LATIDO */
+        @keyframes latir {
+            0% {
+                transform: scale(0.5);
+            }
+            24% {
+                transform: scale(1.8);
+            }
+            48% {
+                transform: scale(0.7);
+            }
+            72% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.5);
+            }
+        }
+
+        /* ESTILO DEL Cuerpo HTML */
+        body {
+            background-color: black;
+        }
+
+        /* ESTILO DEL CONTENEDOR CULPA (TODAS LAS LETRAS) */
+        .culpa {
+            text-align: center;
+            padding-top: 3%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 2%;
+            font-family: "Lucida Console", monospace;
+            color: rgb(190, 220, 254);
+        }
+
+        .culpa span {
+            display: inline-block;
+            animation: latir 1.8s ease-in-out infinite;
+        }
+
+        /* Estilo para letra C */
+        #culpa-uno { 
+            font-size: 450%; 
+        }
+
+        /* Estilo para letra U */
+        #culpa-dos { 
+            font-size: 450%; 
+        }
+
+        /* Estilo para letra L */
+        #culpa-tres { 
+            font-size: 450%; 
+        }
+
+        /* Estilo para letra P */
+        #culpa-cuatro { 
+            font-size: 450%; 
+        }
+
+        /* Estilo para letra A */
+        #culpa-cinco { 
+            font-size: 450%; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- PALABRA CULPA (CADA LETRA ESTÁ CON UN ID DIFERENTE Y TODAS ESTÁN EN UN CONTENEDOR) -->
+    <div class="culpa">
+        <span id="culpa-uno">C</span>
+        <span id="culpa-dos">U</span>
+        <span id="culpa-tres">L</span>
+        <span id="culpa-cuatro">P</span>
+        <span id="culpa-cinco">A</span>
+    </div>    
+
+    <div class="historias">
+        <a href="indexh1.html">Odiar o no</a>
+    </div>
+</body>
+</html>
+
+Odiar o no

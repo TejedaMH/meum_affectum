@@ -1,0 +1,100 @@
+<!--______________________________TRISTEZA______________________________-->
+
+<!--_________________INICIA HTML_________________-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meum affectum</title>
+
+<!--_________________INICIA CSS_________________-->
+
+    <style>
+
+        
+        /*ESTILO DEL CURPO HTML*/
+        body {
+            background-color: black;
+        }
+
+        /* Contenedor de la palabra */
+        .tristeza {
+            display: flex;
+            gap: 2%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tristeza span {
+            display: inline-block;
+            font-size: 400%;
+            font-weight: bold;
+            color: rgb(190, 220, 254);
+            animation: escurrir 3s infinite ease-in-out;
+        }
+
+        /* Animaciones individuales con diferente delay para cada letra */
+        .tristeza span:nth-child(1) { animation-delay: 0.2s; }
+        .tristeza span:nth-child(2) { animation-delay: 0.9s; }
+        .tristeza span:nth-child(3) { animation-delay: 1.3s; }
+        .tristeza span:nth-child(4) { animation-delay: 1.1s; }
+        .tristeza span:nth-child(5) { animation-delay: 1.7s; }
+        .tristeza span:nth-child(6) { animation-delay: 2s; }
+        .tristeza span:nth-child(7) { animation-delay: 2.3s; }
+        .tristeza span:nth-child(8) { animation-delay: 2.6s; }
+
+        /* Animación de escurrimiento */
+        @keyframes escurrir {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+                filter: blur(0px);
+            }
+            50% {
+                transform: translateY(20%);
+                opacity: 0.7;
+                filter: blur(70%);
+            }
+            100% {
+                transform: translateY(80%);
+                opacity: 0.1;
+                filter: blur(100%);
+            }
+        }
+
+    </style>
+
+<!--_________________TERMINA CSS_________________-->
+
+
+<!--_________________CONTINUA HTML_________________-->
+</head>
+
+<body>
+
+    <!--PALABRA TRISTEZA (CADA LETRA ESTA CON UN ID DIFERENTE Y TODAS ESTÁN EN UN CONTENEDOR)-->
+    <div class="tristeza">
+        <span id="tristeza-uno">T</span>
+        <span id="tristeza-dos">R</span>
+        <span id="tristeza-tres">I</span>
+        <span id="tristeza-cuatro">S</span>
+        <span id="tristeza-cinco">T</span>
+        <span id="tristeza-seis">E</span>
+        <span id="tristeza-siete">Z</span>
+        <span id="tristeza-ocho">A</span>        
+    </div>
+    
+    <div class="historias">
+        <a href="indexh10.html">Ni yo mismo<br></a>
+        <a href="indexh11.html">Enojo<br></a>
+        <a href="indexh12.html">Tareas pendientes<br></a>
+    </div>
+
+</body>
+</html>
+<!--_________________TERMINA HTML_________________-->
